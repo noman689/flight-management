@@ -1,0 +1,220 @@
+.main {
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+
+  .planeImage {
+    width: 35px;
+    left: 50px;
+    position: absolute;
+  }
+
+  .fontSize1 {
+    font-size: 26px;
+    color: white;
+  }
+
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #802c5e;
+    padding: 8px;
+  }
+
+  .borderTopLeftRadius {
+    border-top-left-radius: 25px;
+  }
+
+  .borderTopRightRadius {
+    border-top-right-radius: 25px;
+  }
+
+  .dottedBorder {
+    border-right: 2px dotted #ffffff;
+    // border-spacing: 5px;
+  }
+}
+
+.planeImageWidth {
+  width: 65px;
+}
+
+.displayCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx-image {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 45px;
+}
+
+.font70 {
+  font-size: 60px;
+  color: #802c5e;
+}
+
+.RowHeight {
+  height: 197px;
+}
+
+.Row2BorderCol1 {
+  border-left: 1px solid #cdcdcd;
+  border-right: 2px dotted #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+  border-bottom-left-radius: 25px;
+}
+
+.Row2BorderCol1Top {
+  border-left: 1px solid #cdcdcd;
+  border-right: 2px dotted #c6c6c6;
+}
+
+.Row2BorderCol2 {
+  border-right: 1px solid #cdcdcd;
+
+  border-bottom: 1px solid #c6c6c6;
+  border-bottom-right-radius: 25px;
+}
+
+.Row2BorderCol2Top {
+  border-right: 1px solid #cdcdcd;
+}
+
+/////
+.dFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marginLeft10 {
+  margin-right: 25px;
+}
+
+.invertedDivmarginLeft10 {
+  margin-right: 16px;
+}
+
+.footer-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fontSize20 {
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.headingColor {
+  color: #802c5e;
+  font-weight: 600;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+  position: relative;
+  top: 50px;
+  animation: none;
+}
+
+.barCode {
+  width: 70px;
+}
+
+@media screen and (width: 1024px) {
+  .font70 {
+    font-size: 55px;
+  }
+
+  .planeImageWidth {
+    width: 60px;
+  }
+
+  .marginLeft10 {
+    margin-right: 10px;
+  }
+
+  .fontSize20 {
+    font-size: 17px;
+  }
+
+  .barCode {
+    width: 50px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .fontSize1 {
+      font-size: 16px;
+    }
+
+    .planeImage {
+      width: 28px;
+    }
+  }
+
+  .font70 {
+    font-size: 30px;
+  }
+
+  .mx-image {
+    padding-bottom: 15px;
+  }
+
+  .planeImageWidth {
+    width: 51px;
+  }
+
+  .size768 {
+    font-size: 14px;
+  }
+
+  .barCode {
+    width: 50px;
+  }
+
+  .margin768 {
+    margin-right: 0px;
+  }
+
+  .fontSizeOn768 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hideOnSmallScreens {
+    display: none !important;
+  }
+
+  .smallscreen-borderrighttop {
+    border-top-right-radius: 25px;
+  }
+
+  .smallScreen-borderRightBottom {
+    border-bottom-right-radius: 25px;
+  }
+}
+
+.divOverFlow2 {
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.divOverFlow1 {
+  width: 90%;
+  margin-left: 13px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.mt10 {
+  margin-top: -10px;
+}

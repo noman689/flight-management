@@ -1,0 +1,58 @@
+.seat-component {
+  margin: 50px 0px;
+  .seat-map__legend-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .seatBox-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    @media screen and (max-width: 990px) {
+      align-self: center;
+    }
+  }
+  .about-flight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .select-btn {
+    all: unset;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #860d4c;
+    cursor: pointer;
+    height: max-content;
+  }
+  .btn-wrapper {
+    display: flex;
+    gap: 12px;
+  }
+  .seat-numbers {
+    max-width: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+    span {
+      background: #ededf3;
+      padding: 4px;
+      border-radius: 6px;
+      height: max-content;
+      font-size: 12px;
+    }
+  }
+  .selected-seats-info {
+    padding-top: 22px;
+    display: block;
+    font-size: 16px;
+    color: #ababa4;
+  }
+  .w-100{
+    width: 100% !important;
+  }
+}

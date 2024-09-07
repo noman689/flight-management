@@ -1,0 +1,343 @@
+.flight-search-form {
+  padding-left: 5px;
+  padding-right: 5px;
+  .ant-form {
+    // display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0px;
+    :where(.css-dev-only-do-not-override-1km3mtt).ant-select-single
+      .ant-select-selector
+      .ant-select-selection-search {
+      display: flex;
+      align-items: center;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      height: 40%;
+      .marginTop10 {
+        margin-top: 10px;
+      }
+      .btnSearchFlight {
+        margin-left: 0px;
+      }
+    }
+  }
+  .center-on-mobile {
+    @media screen and (max-width: 768px) {
+      justify-content: center !important;
+    }
+  }
+
+  .search-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paddingLR {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form-input {
+    // height: 55px !important;
+    border-radius: 0px !important;
+  }
+  .ant-select-selector {
+    height: 55px !important;
+    border-radius: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btnSearchFlight {
+    background-color: #ffa903;
+    color: black;
+    // width: 190px;
+    height: 55px;
+    font-size: 18px;
+    // margin-left: 20px;
+  }
+
+  .btnCompleteBooking {
+    background-color: #ffa903;
+    color: black;
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .child {
+      bottom: -13%;
+    }
+    .hide {
+      display: none;
+    }
+  }
+
+  @media (max-width: 425px) {
+  }
+  .ant-picker-dropdown .ant-picker-panel-container .ant-picker-panels {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .ant-popover-inner {
+    width: 300px;
+  }
+  .fontSize20 {
+    font-size: 20px;
+  }
+
+  .dflex {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: #585858;
+    font-size: 14px;
+  }
+  .classColor {
+    padding: 5px;
+    color: #585858;
+    font-size: 14px;
+  }
+  .ant-select-auto-complete .ant-select-selection-item {
+    width: 100%;
+  }
+
+  .first-child {
+    .ant-select-auto-complete .ant-select-selector {
+      // border-radius: 6px 0px 0px 6px !important;
+    }
+    .ant-select-arrow {
+      display: none !important;
+    }
+  }
+  .last-child {
+    .ant-input {
+      border-radius: 0px 6px 6px 0px !important;
+      padding-top: 0px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .first-child {
+      .ant-select-auto-complete .ant-select-selector {
+        border-radius: 6px 6px 0px 0px !important;
+      }
+    }
+    .place-holder {
+      .ant-select-selection-placeholder {
+        padding-inline: 0px !important;
+      }
+      .ant-select-selection-search-input {
+        padding-inline: 0px !important;
+      }
+      .ant-select-selector {
+        border-radius: 0px 0px 6px 6px !important;
+      }
+      .mb {
+        margin-bottom: 30px !important;
+      }
+    }
+    .on768Screen {
+      .ant-select-selector {
+        border-radius: 6px 0px 0px 6px !important;
+      }
+    }
+    .mTop {
+      margin-top: 30px;
+    }
+  }
+}
+
+.dflex {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: #585858;
+  font-size: 14px;
+}
+
+.ant-select
+  .ant-select-auto-complete
+  .css-dev-only-do-not-override-1km3mtt
+  .ant-select-single
+  .ant-select-show-search {
+  width: 100% !important;
+}
+
+.showFlightBtn {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.flighiconsize {
+  width: 33px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.place-holder {
+  .ant-select-selection-placeholder {
+    padding-inline: 10px !important;
+  }
+  .ant-select-selection-search-input {
+    padding-inline: 10px !important;
+  }
+  .ant-select-arrow {
+    display: none !important;
+  }
+}
+
+.ant-select-dropdown {
+  z-index: 99999 !important;
+}
+
+.ant-picker-panels {
+  z-index: 99900099 !important;
+}
+
+.autoCompleteHeight {
+  .ant-select-selector {
+    height: 62px !important;
+  }
+  .ant-picker-range {
+    height: 62px !important;
+  }
+  .form-input {
+    height: 62px !important;
+  }
+}
+
+.arrival-city {
+  .ant-select-selection-item {
+    margin-left: 10px !important;
+  }
+}
+
+.ant-popover-inner {
+  width: 300px !important;
+}
+
+.form {
+  .ant-form-item {
+    margin-bottom: 0px !important;
+  }
+}
+
+.autoCompletegeneral {
+  width: 100%;
+  height: 60px;
+}
+@media (min-width: 768px) {
+  .mt-50 {
+    margin-top: 50px;
+  }
+  .autoCompletegeneral {
+    .ant-select-selector {
+      border-radius: 6px 0px 0px 6px !important;
+    }
+  }
+}
+
+.sectionDates {
+  display: flex;
+  justify-content: space-around;
+  .route {
+    font-size: 15px;
+    color: #7c7c7c;
+  }
+  .dates {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .datesDiv {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+  }
+  .datesBorder1 {
+    border-radius: 6px 0px 0px 6px;
+  }
+  .datesBorder2 {
+    border-radius: 0px 6px 6px 0px;
+  }
+}
+.drawer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my-datepicker .ant-picker-dropdown {
+  top: auto !important;
+  bottom: 0 !important;
+}
+
+.DatePickerSmallScreen {
+  display: flex;
+  .ant-picker {
+    height: 60px !important;
+    width: 100% !important;
+  }
+  .start-date {
+    width: 100%;
+    .ant-picker {
+      // border-right: 1px solid white !important;
+      border-top-right-radius: 6px !important;
+      border-bottom-right-radius: 6px !important;
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+  }
+  .end-date {
+    width: 100%;
+    .ant-picker {
+      // border-left: 1px solid white !important;
+      border-top-left-radius: 6px !important;
+      border-bottom-left-radius: 6px !important;
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Your CSS styles for screens up to and including 1024 pixels go here */
+}
+
+.rotate {
+  animation: rotate 1s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+.MainRow {
+  .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+    border-color: #6cc04e;
+    background-color: #37bc0d;
+  }
+}

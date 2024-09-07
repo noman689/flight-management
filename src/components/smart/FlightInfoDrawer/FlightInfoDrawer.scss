@@ -1,0 +1,37 @@
+.ant-timeline.ant-timeline-label
+  .ant-timeline-item-left
+  .ant-timeline-item-content {
+  width: 100% !important;
+}
+.info-timeline {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: -100px;
+  p {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+  }
+}
+
+.drawer-top-heading {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  .ant-drawer .ant-drawer-body {
+    padding: 16px 5px;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 424px) {
+  .ant-drawer-right > .ant-drawer-content-wrapper {
+    width: 90% !important;
+  }
+  .info-timeline {
+    margin-left: -320px;
+  }
+  .ant-drawer .ant-drawer-body {
+    padding: 16px 5px;
+    overflow: scroll;
+  }
+}

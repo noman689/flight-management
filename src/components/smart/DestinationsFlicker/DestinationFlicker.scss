@@ -1,0 +1,9 @@
+.destinations-flicker {
+  width: 940px;
+  @media (max-width: 821px) {
+    width: 90%;
+  }
+  .item-card{
+    margin: 0px 10px;
+  }
+}

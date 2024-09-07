@@ -1,0 +1,206 @@
+.passenger-details-form {
+  width: 100%;
+  padding: 0 10px;
+  input[type='date']::-webkit-inner-spin-button,
+  input[type='date']::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  .ant-collapse {
+    border: none;
+    background-color: transparent;
+  }
+  .ant-input {
+    height: 50px;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.38) !important;
+  }
+  .ant-collapse-header-text {
+    color: #8e2157;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .ant-collapse-expand-icon {
+    svg {
+      color: #000;
+    }
+  }
+  .active-form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ant-select-selector {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px !important;
+    padding: 0 11px;
+    font-size: 1.2rem;
+    align-content: center;
+  }
+  .ant-collapse-item {
+    border: none;
+
+    .ant-collapse-header {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      border-bottom: 1px solid #520c30;
+      // background: linear-gradient(to bottom, #7e184e, #520c30 100%);
+      margin-bottom: 40px;
+    }
+    .ant-collapse .ant-collapse-item:last-child .ant-collapse-header {
+      border-radius: 0 0 14px 14px !important;
+    }
+  }
+
+  .radio-group {
+    display: flex;
+  }
+
+  .radio-box {
+    border: 1px solid #d9d9d9;
+    padding: 8px 20px;
+    border-radius: 4px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .radio-box:hover {
+    background-color: #f7f7f7;
+    border-color: #8e2157;
+  }
+  .radio-box:last-child {
+    margin-right: 0;
+  }
+  .ant-radio-wrapper:hover .ant-radio-inner {
+    border-color: #8e2157;
+  }
+
+  .ant-collapse-content {
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .form-submit-button {
+    margin-top: 24px;
+    height: 60px;
+    width: 140px;
+    border-radius: 10px;
+    color: #ffff;
+    font-weight: 500;
+    background-color: #860d4c;
+    &:hover {
+      background: #860d4c;
+    }
+  }
+}
+.contact-card {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  .ant-form-item {
+    width: 100%;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+}
+.header-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panels-section {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px 0px;
+  margin-top: 12px;
+  margin-bottom: 31px;
+}
+.btns-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 32px;
+}
+.toltip-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 2;
+}
+.personal-info {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.contact-form-heading {
+  padding-top: 22px !important;
+}
+.contact-form {
+  padding: 30px 16px !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 12px;
+  @media screen and (max-width: 1074px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .phone-input-container {
+      width: 100%;
+    }
+  }
+}
+.ant-input:focus {
+  outline: none;
+  border: 1px solid #8e2157;
+  box-shadow: 0px 0px 5px #5c5c5c;
+}
+.ant-input:hover {
+  background-color: #f7f7f7;
+  border-color: #8e2157;
+}
+.PhoneInputInput {
+  font-weight: 100;
+  height: 50px;
+  font-size: 20px;
+  padding: 4px 11px;
+  font-family: 'NoirPro-Light';
+  color: rgba(0, 0, 0, 0.38) !important;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  &:hover {
+    border-color: #8e2157;
+    background-color: #f7f7f7;
+  }
+  &:focus {
+    border-color: #8e2157;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.38) !important;
+  }
+  &:active {
+    border-color: #8e2157 !important;
+    border-width: 0.2px;
+  }
+}

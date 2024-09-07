@@ -1,0 +1,21 @@
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 120px;
+  width: 100%;
+  min-height: 100vh;
+  @media screen and (max-width: 620px) {
+    gap: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Your CSS styles for screens up to and including 1024 pixels go here */
+
+  .content-section {
+    margin-top: -70px;
+  }
+}

@@ -1,0 +1,35 @@
+.mainDivColor {
+  background-color: #f2f3fa;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.ant-tabs-tab {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainPageCard {
+  .ant-tabs-content {
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
+
+  .textColor {
+    color: #701644;
+  }
+
+  .ant-select-arrow {
+    visibility: hidden;
+  }
+}
+
+.ant-tabs-ink-bar {
+  background-color: #701644 !important;
+}

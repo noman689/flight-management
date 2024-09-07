@@ -1,0 +1,569 @@
+.flight-search-form {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  .advance-link {
+    color: #985eaf;
+    cursor: pointer !important;
+    font-size: large !important;
+  }
+
+  .ant-form {
+    // display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0px;
+
+    :where(.css-dev-only-do-not-override-1km3mtt).ant-select-single
+      .ant-select-selector
+      .ant-select-selection-search {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      height: 40%;
+
+      .marginTop10 {
+        margin-top: 10px;
+      }
+
+      .btnSearchFlight {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .center-on-mobile {
+    @media screen and (max-width: 768px) {
+      justify-content: center !important;
+    }
+  }
+
+  .search-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paddingLR {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form-input {
+    // height: 55px !important;
+    border-radius: 0px !important;
+  }
+
+  .ant-select-selector {
+    height: 55px !important;
+    border-radius: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btnSearchFlight {
+    background-color: #ffa903;
+    color: black;
+    width: 99%;
+    height: 55px;
+    font-size: 18px;
+    // margin-left: 20px;
+  }
+
+  .btnCompleteBooking {
+    background-color: #ffa903;
+    color: black;
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .child {
+      bottom: -13%;
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+
+  @media (max-width: 425px) {
+  }
+
+  .ant-picker-dropdown .ant-picker-panel-container .ant-picker-panels {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .ant-popover-inner {
+    // width: 300px;
+  }
+
+  .fontSize20 {
+    font-size: 20px;
+  }
+
+  .dflex {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: #585858;
+    font-size: 14px;
+  }
+
+  .classColor {
+    padding: 5px;
+    color: #585858;
+    font-size: 14px;
+  }
+
+  .ant-select-auto-complete .ant-select-selection-item {
+    width: 100%;
+  }
+
+  .first-child {
+    .ant-select-auto-complete .ant-select-selector {
+      // border-radius: 6px 0px 0px 6px !important;
+    }
+
+    .ant-select-arrow {
+      display: none !important;
+    }
+  }
+
+  .last-child {
+    .ant-input {
+      border-radius: 0px 6px 6px 0px !important;
+      padding-top: 0px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .first-child {
+      .ant-select-auto-complete .ant-select-selector {
+        border-radius: 6px 6px 0px 0px !important;
+      }
+    }
+
+    .place-holder {
+      .ant-select-selection-placeholder {
+        padding-inline: 0px !important;
+      }
+
+      .ant-select-selection-search-input {
+        padding-inline: 0px !important;
+      }
+
+      .ant-select-selector {
+        border-radius: 0px 0px 6px 6px !important;
+      }
+
+      .mb {
+        margin-bottom: 30px !important;
+      }
+    }
+
+    .on768Screen {
+      .ant-select-selector {
+        border-radius: 6px 0px 0px 6px !important;
+      }
+    }
+
+    .mTop {
+      margin-top: 30px;
+    }
+  }
+}
+
+.dflex {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: #585858;
+  font-size: 14px;
+}
+
+.ant-select
+  .ant-select-auto-complete
+  .css-dev-only-do-not-override-1km3mtt
+  .ant-select-single
+  .ant-select-show-search {
+  width: 100% !important;
+}
+
+.showFlightBtn {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.flighiconsize {
+  width: 33px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.place-holder {
+  .ant-select-selection-placeholder {
+    padding-inline: 10px !important;
+  }
+
+  .ant-select-selection-search-input {
+    padding-inline: 10px !important;
+  }
+
+  .ant-select-arrow {
+    display: none !important;
+  }
+}
+
+.ant-select-dropdown {
+  z-index: 99999 !important;
+}
+
+.ant-picker-panels {
+  z-index: 99900099 !important;
+}
+
+.autoCompleteHeight {
+  .ant-select-selector {
+    height: 62px !important;
+  }
+
+  .ant-picker-range {
+    height: 62px !important;
+  }
+
+  .form-input {
+    height: 62px !important;
+  }
+}
+
+.arrival-city {
+  .ant-select-selection-item {
+    margin-left: 10px !important;
+  }
+}
+
+.ant-popover-inner {
+  //   width: 300px !important;
+}
+
+.form {
+  .ant-form-item {
+    margin-bottom: 0px !important;
+  }
+}
+
+.autoCompletegeneral {
+  width: 100%;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .mt-50 {
+    margin-top: 50px;
+  }
+
+  .autoCompletegeneral {
+    .ant-select-selector {
+      border-radius: 6px 0px 0px 6px !important;
+    }
+  }
+}
+
+.sectionDates {
+  display: flex;
+  justify-content: space-around;
+
+  .route {
+    font-size: 15px;
+    color: #7c7c7c;
+  }
+
+  .dates {
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  .datesDiv {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+  }
+
+  .datesBorder1 {
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .datesBorder2 {
+    border-radius: 0px 6px 6px 0px;
+  }
+}
+
+.drawer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my-datepicker .ant-picker-dropdown {
+  top: auto !important;
+  bottom: 0 !important;
+}
+
+.DatePickerSmallScreen {
+  display: flex;
+
+  .ant-picker {
+    height: 60px !important;
+    width: 100% !important;
+  }
+
+  .start-date {
+    width: 100%;
+
+    .ant-picker {
+      // border-right: 1px solid white !important;
+      border-top-right-radius: 6px !important;
+      border-bottom-right-radius: 6px !important;
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+  }
+
+  .end-date {
+    width: 100%;
+
+    .ant-picker {
+      // border-left: 1px solid white !important;
+      border-top-left-radius: 6px !important;
+      border-bottom-left-radius: 6px !important;
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Your CSS styles for screens up to and including 1024 pixels go here */
+}
+
+.rotate {
+  animation: rotate 1s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.MainRow {
+  padding: 20px;
+
+  .ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+    border-color: #701644;
+    background-color: #701644;
+  }
+
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .createNewOrder {
+    font-size: 29px;
+    margin-bottom: 29px;
+  }
+
+  .radioHeading {
+    font-size: 17px;
+  }
+
+  .ant-select-selector {
+    border-radius: 8px !important;
+  }
+
+  .ant-picker {
+    border-radius: 8px !important;
+  }
+
+  .ant-input {
+    border-radius: 8px !important;
+  }
+
+  .ant-radio {
+    margin-bottom: 6px;
+  }
+
+  .dflexFlexEnd {
+    display: flex;
+    justify-content: end;
+
+    .fontSize {
+      font-size: 15px;
+    }
+
+    .padding-right10 {
+      padding-right: 10px;
+    }
+
+    .fontSize:hover {
+      color: #415aae;
+      cursor: pointer;
+    }
+  }
+}
+
+.ant-popover-inner {
+  width: 100% !important;
+}
+
+.ant-input-number-in-form-item {
+  width: 100% !important;
+}
+
+.Airline {
+  .ant-select {
+    width: 99%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+}
+
+.centerBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.btnAnyTime {
+  border-radius: 20px;
+  color: #985eaf;
+  cursor: pointer !important;
+}
+
+.containerBtn {
+  margin-bottom: 30px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.agePopover {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ageTitle {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ageIcon {
+  color: white;
+  font-size: 16px;
+}
+
+// .ant-select-item .ant-select-item-option .custom-option .ant-select-item-option-active {
+//   color: black !important;
+//   background-color: #985eaf !important;
+//   border-radius: 5px;
+//   padding: 5px;
+// }
+
+// .ant-select-item {
+//   padding: 5px !important;
+// }
+
+// .ant-select-item-option-content:hover {
+//   color: black !important;
+//   background-color: #985eaf !important;
+//   border-radius: 5px;
+//   padding: 5px;
+// }
+
+.popover-anyTime {
+  .ant-popover-inner .ant-popover-content {
+    width: 280px !important;
+  }
+}
+
+.planeLogo {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 40px;
+}
+
+.btnConfirm {
+  color: white;
+  background: #ffa903;
+  font-weight: 600;
+}
+
+.dflexFlexEnd {
+  display: flex;
+  justify-content: end;
+}
+.mar-b {
+  margin-bottom: 12px;
+}
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  .trip-label {
+    font-weight: 400;
+  }
+}
+.ant-slider-mark-text {
+  font-size: 12px !important;
+}
+.ant-select-selector .ant-select-selection-search-input {
+  height: 100% !important;
+}
+.ant-slider .ant-slider-track {
+  background-color: #701644;
+}
+.range-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ant-popover .ant-popover-inner {
+  padding: 16px;
+}
+.ant-slider .ant-slider-dot-active,
+.ant-slider:hover .ant-slider-dot-active {
+  border-color: #985eaf;
+}
+
+.ant-slider .ant-slider-handle::after,
+.ant-slider .ant-slider-dot-active {
+  box-shadow: 0 0 0 2px #985eaf !important;
+}

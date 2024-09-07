@@ -1,0 +1,75 @@
+.container {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.airlineName {
+  font-size: 24px;
+  font-weight: bold;
+  color: 'red';
+}
+
+.body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+}
+
+.cityCode {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.planeImage {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.infoLabel {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.infoValue {
+  font-size: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

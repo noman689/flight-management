@@ -1,0 +1,31 @@
+.main-wrapper {
+    position: relative;
+    margin-top: 30px;
+    .flickerWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .left-arrow {
+      position: absolute;
+      right: 50px;
+      top: -40px;
+      cursor: pointer;
+    }
+    .right-arrow {
+      position: absolute;
+      right: 10px;
+      top: -40px;
+      cursor: pointer;
+    }
+    .heading{
+      position: absolute;
+      left: 10px;
+      top: -60px;
+    }
+  }
+  @media screen and (max-width:821px) {
+    .left-arrow , .right-arrow{
+      display: none;
+    }
+}

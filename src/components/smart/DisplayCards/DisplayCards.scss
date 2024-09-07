@@ -1,0 +1,82 @@
+.planing-start {
+  font-weight: 300;
+  color: #333;
+  padding-bottom: 10px;
+  letter-spacing: 0;
+}
+.planing-desc {
+  font-size: 15px;
+  color: #555;
+  padding: 0;
+  line-height: 22px;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.styled-text {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  font-size: 13px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background: linear-gradient(transparent, black 180%);
+}
+.test2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.img1 {
+  height: 400px;
+  width: 400px;
+}
+.img2 {
+  height: 400px;
+  width: 260px;
+}
+
+@media screen and (max-width: 1023px) {
+  .parentDiv {
+    margin-top: 300px;
+    padding: 40px;
+  }
+  .test {
+    height: 200px !important;
+    width: 400px !important;
+  }
+  .content {
+    text-align: center;
+  }
+  .img1 {
+    height: 200px;
+    width: 400px;
+  }
+  .img2 {
+    height: 200px;
+    width: 400px;
+  }
+  .test2 {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .test2 {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+  }
+  .img1 {
+    margin-bottom: 90px;
+  }
+  .img2 {
+    margin-bottom: 20px;
+  }
+}
