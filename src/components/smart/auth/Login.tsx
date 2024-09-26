@@ -3,28 +3,37 @@ import { Form, Input, Button, Row, Col, Card } from 'antd';
 import { login } from '../../../services/authService';
 import { useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import './auth.scss'
+import './auth.scss';
 import { setAuthSuccess, setProfile } from '@client/store/auth/authActions';
+
+interface LocationState {
+  props?: string; // 'props' represents the previous path, so it's a string
+}
 
 const Login = () => {
   const history = useHistory();
   const dispatch = useDispatch();
 
-  useEffect(()=>{
-    const user = localStorage.getItem("user")
-    if(user) {
+  const location = useLocation<LocationState>();
+
+  const { state } = location;
+  const redirectTo = state?.props || '/';
+
+  useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (user) {
       dispatch(setAuthSuccess(JSON.parse(user)));
       dispatch(setProfile(JSON.parse(user)));
-      history.push('/')
+      history.push('/');
     }
-    },[])
+  }, []);
 
   const [form] = Form.useForm();
   const handleLogin = async ({ email, password }) => {
     try {
       const resp = await login(email, password, dispatch);
-      localStorage.setItem('user',JSON.stringify(resp))
-      history.goBack();
+      localStorage.setItem('user', JSON.stringify(resp));
+      history.push(redirectTo);
     } catch (error) {
       console.error('Failed to login', error);
     }
@@ -57,7 +66,7 @@ const Login = () => {
               >
                 <Input.Password placeholder="Password" />
               </Form.Item>
-              <div className='form-footer'>
+              <div className="form-footer">
                 <Form.Item>
                   <Button type="primary" htmlType="submit">
                     Log In
@@ -66,7 +75,7 @@ const Login = () => {
                 <Button
                   type="link"
                   onClick={(e) => {
-                    e.preventDefault()
+                    e.preventDefault();
                     form.resetFields();
                     history.push('/signup');
                   }}
