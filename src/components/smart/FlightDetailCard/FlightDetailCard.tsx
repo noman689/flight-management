@@ -3,7 +3,7 @@ import moment from 'moment';
 // @ts-ignore
 import planeImageBlack from '../../../assets/ticketBlack.svg';
 import './FlightDetailCard.scss';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import { CloudFilled } from '@ant-design/icons';
 import { useState } from 'react';
 import { getAircraftDate, getDuration, getStops } from '@client/utils/helper';
@@ -12,9 +12,18 @@ import FlightInfoModal from '../FlightInfoModal/FlightInfoModal';
 const FlightDetailCard = ({ data }) => {
   const history = useHistory();
   const [showModal, setShowModal] = useState(false);
+
+  const location = useLocation();
+
   const handleClick = (e) => {
     e.stopPropagation();
-    history.push(`/offer-details/${data.id}`);
+    const user = localStorage.getItem('user');
+    if (user) {
+      history.push(`/offer-details/${data.id}`);
+    }
+    history.push('/login', {
+      props: location.pathname,
+    });
   };
   return (
     <>
@@ -118,7 +127,7 @@ const FlightDetailCard = ({ data }) => {
             />
           </>
         ) : (
-          <div style={{padding:'120px'}}>No Such Flight Found</div>
+          <div style={{ padding: '120px' }}>No Such Flight Found</div>
         )}
       </Col>
     </>
